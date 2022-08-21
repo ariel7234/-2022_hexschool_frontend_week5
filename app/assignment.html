@@ -1,0 +1,94 @@
+---
+title: Assignment
+layout: ./app/layout.ejs
+engine: ejs
+current: assignment
+---
+
+<main>
+  <div class="container">
+    <header class="d-flex justify-content-between align-items-center">
+      <div class="d-flex align-items-center">
+        <h2 class="fw-bold fs-3 me-5">Assignment</h2>
+        <div class="dropdown">
+          <a class="dropdown-toggle fw-bold" href="#" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">All Courses</a>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <li><a href="#" class="dropdown-item">Course1</a></li>
+            <li><a href="#" class="dropdown-item">Course2</a></li>
+            <li><a href="#" class="dropdown-item">Course3</a></li>
+          </ul>
+        </div>
+      </div>
+      <div>
+        <a href="#" class="me-4"><span class="material-icons material-symbols-rounded"> search </span></a>
+        <a href="#"><span class="material-icons material-symbols-rounded"> notifications_active </span></a>
+      </div>
+    </header>
+    <div class="row">
+      <nav class="col-12 col-md-4">
+        <div class="dropdown">
+          <a class="dropdown-toggle fw-bold" href="#" id="dp-kind" data-bs-toggle="dropdown" aria-expanded="false">All (4)</a>
+          <ul class="dropdown-menu" aria-labelledby="dp-kind">
+            <li><a href="#" class="dropdown-item">Course1</a></li>
+            <li><a href="#" class="dropdown-item">Course2</a></li>
+            <li><a href="#" class="dropdown-item">Course3</a></li>
+          </ul>
+        </div>
+        <ul class="list-group assignments">
+          <li class="list-group-item list-group-item-action active">
+            <div class="list-header">
+              <p>Chapter Assignment 2</p>
+              <p>4 hrs ago</p>
+            </div>
+            <div class="list-body">
+              <h3 class="title">Please check this file…</h3>
+              <p class="assign">Emily Wang</p>
+            </div>
+          </li>
+          <li class="list-group-item list-group-item-action">
+            <div class="list-header">
+              <p>Chapter Assignment 1</p>
+            </div>
+            <div class="list-body">
+              <h3 class="title">My Homework</h3>
+              <p class="assign">David Xu</p>
+            </div>
+          </li>
+          <li class="list-group-item list-group-item-action">
+            <div class="list-header">
+              <p>Final Assignment</p>
+              <p>18 hrs ago</p>
+            </div>
+            <div class="list-body">
+              <h3 class="title">Have a problem with this…</h3>
+              <p class="assign">Tony Wei</p>
+            </div>
+          </li>
+          <li class="list-group-item list-group-item-action">
+            <div class="list-header">
+              <p>Final Assignment</p>
+              <p>19 hrs ago</p>
+            </div>
+            <div class="list-body">
+              <h3 class="title">Did I do it right?</h3>
+              <p class="assign">Christina Lin</p>
+            </div>
+          </li>
+        </ul>
+      </nav>
+      <section class="col-12 col-md-8">
+        <p>2 comments</p>
+        <div class="card">
+          <div class="card-header d-flex justify-content-between align-items-center">
+            <div class="title">
+              <p>Chapter Assignment 2 / HTML&CSS</p>
+              <h3>Please check this file for me, thanks!</h3>
+            </div>
+            <a href="#"><span class="material-icons material-symbols-rounded"> more_vert </span></a>
+          </div>
+          <div class="card-body"></div>
+        </div>
+      </section>
+    </div>
+  </div>
+</main>

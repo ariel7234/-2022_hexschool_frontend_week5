@@ -1,0 +1,54 @@
+.container {
+  padding: 32px;
+}
+.nav-link {
+  text-decoration: none;
+  color: $dark;
+  margin-left: 32px;
+  margin-bottom: 26px;
+  &:hover {
+    color: $success;
+  }
+}
+.nav-link.active {
+  color: $success;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 4px;
+    height: 32px;
+    border-left: 4px solid $success;
+  }
+}
+.list-group-item {
+  padding: 12px;
+}
+.list-group-item.active {
+  color: $dark;
+  background-color: $gray-100;
+  border-color: $gray-400;
+}
+.list-header {
+  font-size: 12px;
+  display: flex;
+  justify-content: space-between;
+}
+.list-body {
+  display: flex;
+  justify-content: space-between;
+}
+.list-body > .title {
+  font-size: 16px;
+  font-weight: bold;
+}
+.card-header > .title {
+  h3 {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  p {
+    font-size: 12px;
+  }
+}
