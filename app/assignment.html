@@ -34,61 +34,116 @@ current: assignment
             <li><a href="#" class="dropdown-item">Course3</a></li>
           </ul>
         </div>
-        <ul class="list-group assignments">
+        <ul class="list-group max-width-80">
           <li class="list-group-item list-group-item-action active">
             <div class="list-header">
-              <p>Chapter Assignment 2</p>
+              <p class="fz-12">Chapter Assignment 2</p>
               <p>4 hrs ago</p>
             </div>
             <div class="list-body">
-              <h3 class="title">Please check this file…</h3>
-              <p class="assign">Emily Wang</p>
+              <h3 class="h3">Please check this file…</h3>
+              <p class="fz-12 text-secondary">Emily Wang</p>
             </div>
           </li>
           <li class="list-group-item list-group-item-action">
             <div class="list-header">
-              <p>Chapter Assignment 1</p>
+              <p class="fz-12">Chapter Assignment 1</p>
             </div>
             <div class="list-body">
-              <h3 class="title">My Homework</h3>
-              <p class="assign">David Xu</p>
+              <h3 class="h3">My Homework</h3>
+              <p class="fz-12 text-secondary">David Xu</p>
             </div>
           </li>
           <li class="list-group-item list-group-item-action">
             <div class="list-header">
-              <p>Final Assignment</p>
-              <p>18 hrs ago</p>
+              <p class="fz-12">Final Assignment</p>
+              <p class="fz-12">18 hrs ago</p>
             </div>
             <div class="list-body">
-              <h3 class="title">Have a problem with this…</h3>
-              <p class="assign">Tony Wei</p>
+              <h3 class="h3">Have a problem with this…</h3>
+              <p class="fz-12 text-secondary">Tony Wei</p>
             </div>
           </li>
           <li class="list-group-item list-group-item-action">
             <div class="list-header">
-              <p>Final Assignment</p>
-              <p>19 hrs ago</p>
+              <p class="fz-12">Final Assignment</p>
+              <p class="fz-12">19 hrs ago</p>
             </div>
             <div class="list-body">
-              <h3 class="title">Did I do it right?</h3>
-              <p class="assign">Christina Lin</p>
+              <h3 class="h3">Did I do it right?</h3>
+              <p class="fz-12 text-secondary">Christina Lin</p>
             </div>
           </li>
         </ul>
       </nav>
       <section class="col-12 col-md-8">
-        <p>2 comments</p>
-        <div class="card">
+        <p class="fz-12 text-secondary mb-md-2 text-md-end">2 comments</p>
+        <div class="card mb-3">
           <div class="card-header d-flex justify-content-between align-items-center">
             <div class="title">
-              <p>Chapter Assignment 2 / HTML&CSS</p>
-              <h3>Please check this file for me, thanks!</h3>
+              <p class="fz-12 mb-md-1">Chapter Assignment 2 / HTML&CSS</p>
+              <h3 class="h3">Please check this file for me, thanks!</h3>
             </div>
             <a href="#"><span class="material-icons material-symbols-rounded"> more_vert </span></a>
           </div>
-          <div class="card-body"></div>
+          <div class="card-body">
+            <ul>
+              <li class="row mb-3">
+                <img class="userImg rounded-circle col-md-1 p-0 me-md-2" src="https://images.unsplash.com/photo-1504051771394-dd2e66b2e08f?ixlib=rb-1.2.1&ixid=eyjhchbfawqiojeymdd9&auto=format&fit=crop&w=2134&q=80" alt="userImg" />
+                <div class="col-md-11 p-0 border-bottom">
+                  <h3 class="h3">Emily Wang</h3>
+                  <p class="fz-15 text-secondary">10:38 AM (4 hours ago)</p>
+                  <p class="mt-md-3">
+                    Hi Teacher, the attached file is my homework of chapter 2. And here comes a question: Why in the following code the height of the div is bigger than the height of the <span class="f-mono">img</span> ? There is a gap below the image, but it doesn’t seems to be a padding/margin.
+                    What is the gap or extra space below image?
+                  </p>
+                  <a href="#" class="btn btn-light border fw-bold mt-md-3 mb-md-3" download="HW-2-David.zip">
+                    <i class="material-icons material-symbols-rounded align-middle me-md-2"> attach_file</i>
+                    HW-2-David.zip
+                  </a>
+                </div>
+              </li>
+              <li class="row position-relative">
+                <div class="w-fit position-absolute top-0 end-0">
+                  <!-- FIXME: outlined 沒有用 -->
+                  <a id="btn-star" class="me-4" href="#"><span class="material-icons material-symbols-outlined"> star </span></a>
+                  <a id="btn-edit" href="#"><span class="material-icons material-symbols-rounded"> edit </span></a>
+                </div>
+                <img class="userImg rounded-circle col-md-1 p-0 me-md-2" src="https://images.unsplash.com/photo-1514794749374-fb67509dbb7f?ixlib=rb-1.2.1&ixid=eyjhchbfawqiojeymdd9&auto=format&fit=crop&w=2000&q=80" alt="userImg" />
+                <div class="col-md-11 p-0">
+                  <h3 class="h3">Andy Chen (You)</h3>
+                  <p class="fz-15 text-secondary">13:24 AM (1 hours ago)</p>
+                  <p class="mt-md-3">
+                    Hi David, by default, an image is rendered inline, like a letter so it sits on the same line that a, b, c and d sit on. There is space below that line for the descenders you find on letters like g, j, p and q.<br /><br />
+                    You can: <br /><br />
+                    　• adjust the <span class="f-mono">vertical-align</span> of the image to position it elsewhere (e.g. the <span class="f-mono">middle</span> ) or <br /><br />
+                    　• change the <span class="f-mono">display</span> so it isn’t inline.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
     </div>
+    <!-- TODO: 新增其他頁籤 -->
+    <div class="d-flex justify-content-end">
+      <div class="btn btn-outline-success me-3" id="btn-read">Mark as read</div>
+      <div class="btn btn-success" id="btn-reply">Reply</div>
+    </div>
+    <nav class="d-flex justify-content-center">
+      <ul class="d-flex">
+        <li class="me-4">
+          <a href="#">
+            <span class="material-icons material-symbols-rounded"> navigate_before </span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span class="material-icons material-symbols-rounded"> navigate_next </span>
+          </a>
+        </li>
+      </ul>
+    </nav>
   </div>
 </main>

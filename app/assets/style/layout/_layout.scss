@@ -3,15 +3,29 @@
   width: 296px;
   height: 100vh;
 }
+.nav-link {
+  text-decoration: none;
+  color: $dark;
+  margin-left: 32px;
+  margin-bottom: 26px;
+  &:hover {
+    color: $success;
+  }
+}
+.nav-link.active {
+  color: $success;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 4px;
+    height: 32px;
+    border-left: 4px solid $success;
+  }
+}
 .userImg {
   width: 40px;
   height: 40px;
-}
-.assignments {
-  max-width: 320px;
-}
-
-.assign {
-  color: $secondary;
-  font-size: 15px;
+  object-fit:cover;
 }

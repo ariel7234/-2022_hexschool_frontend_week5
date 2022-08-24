@@ -2,7 +2,8 @@
 @import "../../../node_modules/bootstrap/scss/functions";
 @import "./helpers/variables";
 @import "../../../node_modules/bootstrap/scss/bootstrap";
-@import "./helpers/base";
+@import "./base/base";
 @import "./helpers/utils";
+@import "./components/button";
 @import "./layout/layout.scss";
-@import "./layout/index.scss";
+@import "./pages/index.scss";
