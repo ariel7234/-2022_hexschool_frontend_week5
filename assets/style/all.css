@@ -12748,6 +12748,7 @@ a:hover {
   height: 40px;
   -o-object-fit: cover;
      object-fit: cover;
+  display: block;
 }
 
 /*# sourceMappingURL=all.css.map */
